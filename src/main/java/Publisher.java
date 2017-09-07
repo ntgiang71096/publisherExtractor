@@ -2,7 +2,9 @@
  * Created by GiangNT on 9/3/2017.
  */
 public class Publisher {
-    private String Journal;
+
+
+    private String journal;
     private int pageStart;
     private int pageEnd;
     private int year;
@@ -18,7 +20,7 @@ public class Publisher {
     }
 
     public Publisher(String journal, int pageStart, int pageEnd, int year, int vol) {
-        Journal = journal;
+        this.journal = journal;
         this.pageStart = pageStart;
         this.pageEnd = pageEnd;
         this.year = year;
@@ -26,16 +28,16 @@ public class Publisher {
     }
 
     public Publisher(){
-
+        this.journal = "None";
     }
 
     public String getJournal() {
 
-        return Journal;
+        return journal;
     }
 
     public void setJournal(String journal) {
-        Journal = journal;
+        this.journal = journal;
     }
 
     public int getPageStart() {
