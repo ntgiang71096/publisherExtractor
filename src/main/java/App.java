@@ -83,7 +83,7 @@ public class App {
                     if (!jounalCatcher.equals("")){
                         publisher.setJournal(jounalCatcher);
                     }
-                    System.out.println(line);
+//                    System.out.println(line);
                     extractPublisher(line, publisher);
                 }
 
@@ -93,10 +93,10 @@ public class App {
 //            System.out.println("Year: " + publisher.getYear());
 //            System.out.println("Page Start: " + publisher.getPageStart());
 //            System.out.println("Page End: " + publisher.getPageEnd());
-            System.out.println("Vol: " + publisher.getVol());
-            System.out.println("No: " + publisher.getNo());
+//            System.out.println("Vol: " + publisher.getVol());
+//            System.out.println("No: " + publisher.getNo());
 
-//            createXmlOutput(publisher, fileName);
+            createXmlOutput(publisher, fileName);
 
             System.out.println("------------------------------------");
 
@@ -199,9 +199,9 @@ public class App {
 
         //text = text.toLowerCase();
 
-//        extractJournal(text, publisher);
-//        extractYear(text,publisher);
-//        extractPage(text,publisher);
+        extractJournal(text, publisher);
+        extractYear(text,publisher);
+        extractPage(text,publisher);
         extractVol(text,publisher);
         extractNo(text,publisher);
     }
